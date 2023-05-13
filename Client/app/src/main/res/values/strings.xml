@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WordDuel</string>
+    <string name="title_activity_login_menu">LoginMenu</string>
+    <string name="title_activity_register_menu">RegisterMenu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Play"> Играть</string>
+    <string name="ChangeGameType">Выбрать режим</string>
+    <string name="Nick">FireAndBear</string>
+    <string name="Login">Войти</string>
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="Register">Регистрация</string>
+    <string name="password2">Повторите пароль</string>
+    <string name="NickInput">Имя отображаемое в игре</string>
+    <string name="email_code">Подтверждение email</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/backgroundStats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/down_panel"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/light_gray"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mainButton"
+
+        app:layout_constraintStart_toStartOf="@id/backgroundStats"
+        app:layout_constraintTop_toTopOf="@+id/down_panel"
+        app:srcCompat="@drawable/setting_off_button" />
+
+
+
+    <ImageButton
+        android:id="@+id/mainButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/statsButton"
+        app:layout_constraintStart_toEndOf="@id/settingsButton"
+        app:layout_constraintTop_toTopOf="@+id/down_panel"
+        app:srcCompat="@drawable/home_on_button" />
+
+    <ImageButton
+        android:id="@+id/statsButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/backgroundStats"
+        app:layout_constraintStart_toEndOf="@id/mainButton"
+        app:layout_constraintTop_toTopOf="@+id/down_panel"
+        app:srcCompat="@drawable/stats_off_button" />
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/gameModeBack"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="@+id/gameModeBack"
+        app:srcCompat="@drawable/left_button" />
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintBottom_toBottomOf="@+id/gameModeBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/leftButton"
+
+        app:layout_constraintTop_toTopOf="@+id/gameModeBack"
+        app:srcCompat="@drawable/right_button" />
+
+    <ImageView
+        android:id="@+id/gameModeBack"
+        android:layout_width="200dp"
+        android:layout_height="315dp"
+        android:layout_marginBottom="36dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/down_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gamemode_back" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/gameModeBack"
+        app:layout_constraintEnd_toEndOf="@id/gameModeBack"
+
+        app:layout_constraintStart_toStartOf="@id/gameModeBack"
+        app:layout_constraintTop_toTopOf="@+id/gameModeBack"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/rating_gamemode" />
+
+    <ImageButton
+        android:id="@+id/goButton"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/gameModeBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/go_button" />
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="147dp"
+        android:layout_height="176dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_flag" />
+
+    <ImageView
+        android:id="@+id/rang"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/flag"
+        app:layout_constraintStart_toStartOf="@+id/flag"
+        app:layout_constraintTop_toBottomOf="@+id/points"
+        app:srcCompat="@drawable/green" />
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="114dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="FireAndBear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/flag" />
+
+    <ImageView
+        android:id="@+id/points"
+        android:layout_width="104dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/game_name"
+        app:layout_constraintStart_toStartOf="@+id/game_name"
+        app:layout_constraintTop_toBottomOf="@+id/game_name"
+        app:srcCompat="@drawable/zero" />
+
+    <TextView
+        android:id="@+id/subrang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rang"
+        app:layout_constraintEnd_toEndOf="@+id/rang"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/rang"
+        app:layout_constraintTop_toTopOf="@+id/rang"
+        app:layout_constraintVertical_bias="0.333" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

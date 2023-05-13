@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsMenu">
+
+    <VideoView
+        android:id="@+id/backgroundStats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/down_panel"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/light_gray"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundStats"
+        app:layout_constraintEnd_toEndOf="@id/backgroundStats"
+        app:layout_constraintStart_toStartOf="@id/backgroundStats" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mainButton"
+
+        app:layout_constraintStart_toStartOf="@id/backgroundStats"
+        app:layout_constraintTop_toTopOf="@+id/down_panel"
+        app:srcCompat="@drawable/setting_on_button" />
+
+    <ImageButton
+        android:id="@+id/mainButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/statsButton"
+        app:layout_constraintStart_toEndOf="@id/settingsButton"
+        app:layout_constraintTop_toTopOf="@+id/down_panel"
+        app:srcCompat="@drawable/home_off_button" />
+
+    <ImageButton
+        android:id="@+id/statsButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/backgroundStats"
+        app:layout_constraintStart_toEndOf="@id/mainButton"
+        app:layout_constraintTop_toTopOf="@+id/down_panel"
+        app:srcCompat="@drawable/stats_off_button" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toTopOf="@+id/down_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundStats"
+        app:layout_constraintVertical_bias="0.586"
+        app:srcCompat="@drawable/settings" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fir_on"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:background="@drawable/on" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fir_off"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:background="@drawable/off" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sec_on"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:background="@drawable/off"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+ />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sec_off"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:background="@drawable/on" />
+
+    <ImageButton
+        android:id="@+id/vk"
+        android:layout_width="96dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="284dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/sec_off"
+        app:srcCompat="@drawable/vk" />
+
+    <ImageButton
+        android:id="@+id/git"
+        android:layout_width="96dp"
+        android:layout_height="46dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/vk"
+        app:layout_constraintTop_toTopOf="@+id/vk"
+        app:srcCompat="@drawable/git" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
